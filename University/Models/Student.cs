@@ -7,5 +7,11 @@ namespace University.Models
 {
     public class Student
     {
+        public int StudentId { get; set; }
+        public string Lastname { get; set; }
+        public string FirstMidName { get; set; }
+        public DateTime EnrollmentDate  { get; set; }
+        public ICollection<Enrollment> Enrollments { get; set; }
+        
     }
 }
